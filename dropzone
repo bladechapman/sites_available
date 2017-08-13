@@ -1,0 +1,8 @@
+server {
+	listen 80;
+	server_name dropzone.bladeismyna.me;
+
+	location / {
+		rewrite ^ http://bladeismyna.me/dropzone$request_uri permanent;
+	}
+}

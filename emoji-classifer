@@ -1,0 +1,7 @@
+server {
+	server_name emoji.bladeismyna.me;
+	listen 80;
+	location / {
+		proxy_pass http://bladeismyna.me:5000;
+	}
+}
